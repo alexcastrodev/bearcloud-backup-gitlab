@@ -1,0 +1,9 @@
+RewriteEngine On
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteBase /
+    
+
+    RewriteRule ^inicio$ index.php [QSA,L,NC]
+    RewriteRule ^login$ login.php [QSA,L,NC]

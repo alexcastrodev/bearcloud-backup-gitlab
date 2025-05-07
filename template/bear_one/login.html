@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"></meta>
+
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+    ></meta>
+
+    <meta
+        name="viewport"
+        content="width=device-width,initial-scale=1,user-scalable=0,minimal-ui"
+    ></meta>
+
+    <title>
+        {titulo}
+    </title>
+
+    <meta
+        content="{titulo}"
+        name="description"
+    ></meta>
+
+    <meta
+        content="Alexandro Castro"
+        name="author"
+    ></meta>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+    <link
+        rel="shortcut icon"
+        href="img/favicon.ico"
+    ></link>
+
+    <link
+        href="{caminho}assets/css/bootstrap.min.css"
+        rel="stylesheet"
+        type="text/css"
+    ></link>
+
+    <link
+        href="{caminho}assets/css/icons.css"
+        rel="stylesheet"
+        type="text/css"
+    ></link>
+
+    <link
+        href="{caminho}assets/css/style.css"
+        rel="stylesheet"
+        type="text/css"
+    ></link>
+</head>
+
+<body>
+    <!-- Begin page -->
+
+    <div class="wrapper-page">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="text-center m-0">
+                    <a
+                        href="index.php"
+                        class="logo logo-admin"
+                    >
+                        <img
+                            src="img/logo.png"
+                            height="30"
+                            alt="logo"
+                        >
+                    </a>
+                </h3>
+
+                <div class="p-3">
+                    <h4 class="text-muted font-18 m-b-5 text-center">Bem vindo !</h4>
+
+                    <p class="text-muted text-center">Conecte-se de modo seguro ao {titulo}</p>
+                    <p class="text-muted text-center">
+                        <div id="login-alert">
+                            <span class="glyphicon glyphicon-exclamation-sign"></span>
+                            <span id="mensagem"></span>
+                        </div>      
+                    </p>
+
+                    <form
+                        id="bear-form"
+                        class="form-horizontal m-t-30"
+                        name="bear-form"
+                        >
+                        <div class="form-group">
+                            <label for="usuario">Usuario</label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="usuario"
+                                name="usuario"
+                                placeholder="Login"
+                            ></input>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="senha">Senha</label>
+
+                            <input
+                                type="password"
+                                class="form-control"
+                                id="senha"
+                                name="senha"
+                                placeholder="Sua senha"
+                            ></input>
+                        </div>
+
+                        <div class="form-group row m-t-20">
+                            <div class="col-6">
+                                <div class="custom-control custom-checkbox">
+                                    <input
+                                        type="checkbox"
+                                        class="custom-control-input"
+                                        id="customControlInline"
+                                    ></input>
+
+                                    <label
+                                        class="custom-control-label"
+                                        for="customControlInline"
+                                    >Remember me</label>
+                                </div>
+                            </div>
+
+                            <div class="col-6 text-right">
+                                <button
+                                    class="btn btn-primary w-md waves-effect waves-light"
+                                    type="button"
+                                    name="bear-login"
+                                    id="bear-login"
+                                >Logar</button>
+                            </div>
+                        </div>
+
+                        <div class="form-group m-t-10 mb-0 row">
+                            <div class="col-12 m-t-20">
+                                <a
+                                    href="#"
+                                    class="text-muted"
+                                >
+                                    <i class="mdi mdi-lock"></i>
+                                    Recuperar sua senha
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="m-t-40 text-center">
+            <p>
+                Ou via Rede Social
+
+                <a
+                    href="#"
+                    class="text-primary"
+                >Conta Google</a>
+            </p>
+
+            <p>
+                © 2018 {titulo}. Feito com
+
+                <i class="fa fa-heart text-danger"></i>
+                Por Alexandro Castro
+            </p>
+        </div>
+    </div>
+
+    <script src="{caminho}assets/js/jquery.min.js"></script>
+    <script src="{caminho}assets/js/bootstrap.bundle.min.js"></script>
+    <script src="{caminho}assets/js/jquery.slimscroll.js"></script>
+    <script src="{caminho}assets/js/waves.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
+    <script src="{caminho}assets/js/bear-login.js"></script>
+    <script src="{caminho}assets/js/app.js"></script>
+</body>
+</html>

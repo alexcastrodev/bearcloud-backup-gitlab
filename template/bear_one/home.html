@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"></meta>
+
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+    ></meta>
+
+    <meta
+        name="viewport"
+        content="width=device-width,initial-scale=1,user-scalable=0,minimal-ui"
+    ></meta>
+
+    <title>
+        {titulo}
+    </title>
+
+    <meta
+        content="{titulo}"
+        name="description"
+    ></meta>
+
+    <meta
+        content="Alexandro Castro"
+        name="author"
+    ></meta>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link
+        rel="shortcut icon"
+        href="img/favicon.ico"
+    ></link>
+
+    <link
+        rel="stylesheet"
+        href="{caminho}assets/plugins/morris/morris.css"
+    ></link>
+
+    <link
+        href="{caminho}assets/css/bootstrap.min.css"
+        rel="stylesheet"
+        type="text/css"
+    ></link>
+
+    <link
+        href="{caminho}assets/css/icons.css"
+        rel="stylesheet"
+        type="text/css"
+    ></link>
+
+    <link
+        href="{caminho}assets/css/style.css"
+        rel="stylesheet"
+        type="text/css"
+    ></link>
+</head>
+
+<body>
+
+    <header id="topnav">
+        <div class="topbar-main">
+            <div class="container-fluid">
+
+                <div class="logo">
+                    <a
+                        href="index.php"
+                        class="logo"
+                    >
+                        <img
+                            src="img/logo.png"
+                            alt=""
+                            class="logo-small"
+                        >
+
+                        <img
+                            src="img/logo.png"
+                            alt=""
+                            class="logo-large"
+                        >
+                    </a>
+                </div>
+
+                <div class="menu-extras topbar-custom">
+                    <ul class="float-right list-unstyled mb-0">
+                        <li class="dropdown notification-list d-none d-sm-block">
+                            <form
+                                role="search"
+                                class="app-search"
+                            >
+                                <div class="form-group mb-0">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Procurar Posts"
+                                    ></input>
+
+                                    <button type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </li>
+
+                        <li class="dropdown notification-list">
+                            <a
+                                class="nav-link dropdown-toggle arrow-none waves-effect"
+                                data-toggle="dropdown"
+                                href="#"
+                                role="button"
+                                aria-haspopup="false"
+                                aria-expanded="false"
+                            >
+                                <i class="fa fa-fire noti-icon"></i>
+
+                                <span class="badge badge-pill badge-danger noti-icon-badge">0</span>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
+
+                                <h6 class="dropdown-item-text">Notificações (0)</h6>
+
+                                <div class="slimscroll notification-item-list">
+
+                                    <a
+                                        href="javascript:void(0);"
+                                        class="dropdown-item notify-item active"
+                                    >
+                                        <div class="notify-icon bg-success">
+                                            <i class="fa fa-heart"></i>
+                                        </div>
+
+                                        <p class="notify-details">
+                                            Você está logado!
+
+                                            <span class="text-muted">
+                                                Seja bem vindo, {usuario}
+                                            </span>
+                                        </p>
+                                    </a>
+
+                                <a
+                                    href="javascript:void(0);"
+                                    class="dropdown-item text-center text-primary"
+                                >
+                                    Ver todos
+
+                                    <i class="fi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="dropdown notification-list">
+                            <div class="dropdown notification-list nav-pro-img">
+                                <a
+                                    class="dropdown-toggle nav-link arrow-none waves-effect nav-user"
+                                    data-toggle="dropdown"
+                                    href="#"
+                                    role="button"
+                                    aria-haspopup="false"
+                                    aria-expanded="false"
+                                >
+                                    <img
+                                        src="uploads/perfil/{uploads_perfil}"
+                                        alt="user"
+                                        class="rounded-circle"
+                                    >
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right profile-dropdown">
+                                    <a
+                                        class="dropdown-item"
+                                        href="#"
+                                    >
+                                        <i class="fa fa-user m-r-5"></i>
+                                        Perfil
+                                    </a>
+
+                                    <a
+                                        class="dropdown-item"
+                                        href="#"
+                                    >
+                                        <i class="fa fa-file m-r-5"></i>
+                                        Meu Conteúdo
+                                    </a>
+
+                                    <a
+                                        class="dropdown-item d-block"
+                                        href="#"
+                                    >
+                                        <span class="badge badge-success float-right">11</span>
+
+                                        <i class="fa fa-envelope m-r-5"></i>
+                                        Tickets
+                                    </a>
+
+                                    <a
+                                        class="dropdown-item"
+                                        href="/entrar"
+                                    >
+                                        <i class="fa fa-key m-r-5"></i>
+                                        Tela de Bloqueio
+                                    </a>
+
+                                    <div class="dropdown-divider"></div>
+
+                                    <a
+                                        class="dropdown-item text-danger"
+                                        href="/login"
+                                    >
+                                        <i class="fa fa-times-circle text-danger"></i>
+                                        Sair da conta
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="menu-item">
+
+                            <a
+                                class="navbar-toggle nav-link"
+                                id="mobileToggle"
+                            >
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="page-title-box">
+                        <h4 class="page-title">{titulo}</h4>
+
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active">Seja bem vindo, {usuario}</li>
+                        </ol>
+
+                        <div class="state-information">
+                            <div class="state-graph">
+                                <div id="header-chart-1"></div>
+
+                                <div class="info">Visitas</div>
+                            </div>
+
+                            <div class="state-graph">
+                                <div id="header-chart-2"></div>
+
+                                <div class="info">Visitas mensais</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-custom">
+            <div class="container-fluid">
+                <div id="navigation">
+
+                    <ul class="navigation-menu">
+                        <li class="has-submenu">
+                            <a href="index.php">
+                                <i class="fa fa-fire"></i>
+
+                                <span>Inicio</span>
+                            </a>
+                        </li>
+
+                        <li class="has-submenu">
+                            <a href="#">
+                                <i class="fa fa-quote-right"></i>
+                                Posts
+                            </a>
+
+                            <ul class="submenu">
+                                <li>
+                                    <a href="post.php">Adicionar Post</a>
+                                </li>
+                                <li>
+                                   <a href="posts.php">Listar Posts</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="#">
+                                <i class="fa fa-podcast"></i>
+                                Ads
+                            </a>
+
+                            <ul class="submenu">
+                                <li>
+                                    <a href="ad.php">Adicionar Anuncio</a>
+                                </li>
+                                <li>
+                                   <a href="ads.php">Listar anuncios</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-3 col-md-6">
+                    <div class="card mini-stat bg-primary">
+                        <div class="card-body mini-stat-img">
+                            <div class="mini-stat-icon">
+                                <i class="mdi mdi-cube-outline float-right"></i>
+                            </div>
+
+                            <div class="text-white">
+                                <h6 class="text-uppercase mb-3">Tickets</h6>
+
+                                <h4 class="mb-4">1</h4>
+
+                                <span class="badge badge-info">Novo</span>
+
+                                <span class="ml-2">Mensagem Recebida</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="card mini-stat bg-primary">
+                        <div class="card-body mini-stat-img">
+                            <div class="mini-stat-icon">
+                                <i class="mdi mdi-buffer float-right"></i>
+                            </div>
+
+                            <div class="text-white">
+                                <h6 class="text-uppercase mb-3">Adsenses</h6>
+
+                                <h4 class="mb-4">2</h4>
+
+                                <span class="badge badge-danger"></span>
+
+                                <span class="ml-2"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="card mini-stat bg-primary">
+                        <div class="card-body mini-stat-img">
+                            <div class="mini-stat-icon">
+                                <i class="mdi mdi-tag-text-outline float-right"></i>
+                            </div>
+
+                            <div class="text-white">
+                                <h6 class="text-uppercase mb-3">Posts Ativos</h6>
+
+                                <h4 class="mb-4">{posts_ativos}</h4>
+
+                                <span class="badge badge-warning"></span>
+
+                                <span class="ml-2"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="card mini-stat bg-primary">
+                        <div class="card-body mini-stat-img">
+                            <div class="mini-stat-icon">
+                                <i class="mdi mdi-briefcase-check float-right"></i>
+                            </div>
+
+                            <div class="text-white">
+                                <h6 class="text-uppercase mb-3">Post mais Visitado</h6>
+
+                                <span class="ml-2">{posts_mais_visitados}</span>
+                                <br><br>
+
+                                <span class="badge badge-info">{posts_mais_visitados_qnt}</span>
+
+                                <span class="ml-2">Visitas esse mês</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    © 2018 {titulo} -
+
+                    <span class="d-none d-sm-inline-block">
+                        Desenvolvido com
+
+                        <i class="fa fa-heart text-danger"></i>
+                        por Alexandro Castro
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{caminho}assets/js/jquery.min.js"></script>
+    <script src="{caminho}assets/js/bootstrap.bundle.min.js"></script>
+    <script src="{caminho}assets/js/jquery.slimscroll.js"></script>
+    <script src="{caminho}assets/js/waves.min.js"></script>
+    <script src="{caminho}assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <script src="{caminho}assets/plugins/morris/morris.min.js"></script>
+    <script src="{caminho}assets/plugins/raphael/raphael-min.js"></script>
+    <script src="{caminho}assets/pages/dashboard.js"></script>
+    <script src="{caminho}assets/js/app.js"></script>
+</body>
+</html>
